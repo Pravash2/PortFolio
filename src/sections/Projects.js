@@ -156,7 +156,7 @@ const Project = ({
           </Hide>
         </ProjectTag>
       </ImageContainer>
-    </Flex>
+    </Flex>{' '}
   </Card>
 );
 

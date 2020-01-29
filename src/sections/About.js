@@ -33,11 +33,11 @@ const Background = () => (
 );
 
 const ProfilePicture = styled(Image)`
-  border-radius: 50%;
+  border-radius: 10%;
   transition: all 0.25s ease-out;
 
   &:hover {
-    border-radius: 20%;
+    border-radius: 5%;
   }
 `;
 
@@ -76,12 +76,14 @@ const About = () => (
             </Box>
 
             <Box
-              width={[1, 1, 2 / 6]}
-              style={{ maxWidth: '300px', margin: 'auto' }}
+              width={[3, 3, 2 / 6]}
+              style={{
+                margin: 'auto',
+              }}
             >
               <Fade right>
                 <ProfilePicture
-                  src={profile.image.src}
+                  src={require('../images/profile.png')}
                   alt={profile.title}
                   mt={[4, 4, 0]}
                   ml={[0, 0, 1]}
